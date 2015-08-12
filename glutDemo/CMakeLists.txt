@@ -9,6 +9,7 @@
 #      History:
 #=============================================================================
 
+
 project(gultDemo)
 cmake_minimum_required(VERSION 2.8)
 
@@ -30,3 +31,8 @@ endif(NOT GLUT_FOUND)
 
 add_executable(glutDemo appMain.cpp)
 target_link_libraries(glutDemo ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
+
+# it has problem about xmu xi
+# using 
+# 	sudo apt-get install libxmu-dev libxi-dev
+# to solve this problem
