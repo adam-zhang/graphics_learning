@@ -28,8 +28,5 @@ if(NOT GLUT_FOUND)
 	message(ERROR "GLUT is not found")
 endif(NOT GLUT_FOUND)
 
-
 add_executable(glutDemo appMain.cpp)
 target_link_libraries(glutDemo ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
-
-
