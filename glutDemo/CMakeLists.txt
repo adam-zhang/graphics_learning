@@ -32,7 +32,7 @@ endif(NOT GLUT_FOUND)
 add_executable(glutDemo appMain.cpp)
 target_link_libraries(glutDemo ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
 
-# it has problem about xmu xi
+# it has problems about xmu xi
 # using 
 # 	sudo apt-get install libxmu-dev libxi-dev
 # to solve this problem
